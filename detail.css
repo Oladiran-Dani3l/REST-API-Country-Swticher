@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.detail-container {
+    margin-top: 4rem;
+}
+
+.back {
+    margin-bottom: 3rem;
+    height: 2rem;
+    width: 6.7rem;
+}
+
+.about-country {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+
+.about-flag {
+    width: 35rem;
+    height: 15rem;
+}
+
+.about-info {
+    width: 36rem;
+    margin-top: 2.375rem;
+}
+
+.country-name {
+    margin-bottom: 1.75rem;
+}
+
+.about-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    margin-bottom: 1rem;
+}
+
+.borders {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.borders p {
+    margin-right: 1rem;
+}
+
+.border-countries {
+    display: flex;
+}
+
+.border {
+    width: 6rem;
+    height: 1.375rem;
+    border: 1px solid var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+.border:not(:last-child) {
+    margin-right: 0.625rem;
+}
+
+.detail-btn {
+    background-color: var(--white-dk-md-txt-lt-md-el);
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+}
+
+body.dark-mode .detail-btn {
+    background-color: var(--dark-blue);
+    border: 1.5px solid var(--very-dark-blue-txt);
+}
+
+
+
+
+
+@media screen and (max-width: 32em) {
+    body {
+        overflow-y: visible;
+    }
+
+    .detail-container {
+        margin-top: 5rem;
+    }
+
+    .back {
+        width: 100%;
+        max-width: 6.7rem;
+    }
+
+    .about-country {
+        margin-bottom: 4rem;
+    }
+
+    .about-flag {
+        width: 92vw;
+        max-width: 35rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .info-1 {
+        margin-bottom: 4rem;
+    }
+
+    .borders, .about-information, .about-country {
+        flex-direction: column;
+    }
+
+    .border-countries {
+        margin-top: 0.8rem;
+        display: flex;
+    }
+}
